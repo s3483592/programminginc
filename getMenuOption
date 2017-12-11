@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int getMenuOption()
+{
+	int menuOption;
+	printf("Select an option: ");
+	scanf("%i", &menuOption);
+	return menuOption;
+}
+
+void menuStart(void)
+{
+	printf("Menu start text \n");
+}
+
+int main(void)
+{
+	BOOLEAN exitMenu = FALSE;
+
+	do
+	{
+		menuStart();
+		switch(getMenuOption())
+		{
+			case 1:
+			case 2:
+			default:
+		}	
+	}
+}
